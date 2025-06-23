@@ -3,35 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>BrianAir</title>
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/script.js" defer></script>
   </head>
   <body>
     <!-- #region GLOBAL HEADER -->
     <header id="MainHeader">
-      <h1>Header</h1>
-      <p>This is the site header</p>
+      <h1>
+        <span>Brian</span>
+        <span>Air</span>
+      </h1>
+      <img src="./assets/images/Hero-Image-Brianair-Interiur.jpg" alt="" />
     </header>
     <!-- #endregion -->
     <!-- #region GLOBAL NAVIGATION -->
     <nav id="MainNav">
-      <p>Navigation Menu</p>
+      <ul>
+        <li>
+          <a href="#">FORSIDE</a>
+        </li>
+        <li>
+          <a href="#">DESTINATION</a>
+        </li>
+        <li>
+          <a href="#">OM BRIANAIR</a>
+        </li>
+        <li>
+          <a href="#">KONTAKT</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#">SIGNIN</a>
+        </li>
+        <li>
+          <a href="#">SIGNUP</a>
+        </li>
+      </ul>
     </nav>
     <!-- #endregion -->
     <!-- #region GLOBAL MAIN CONTENT -->
     <main>
-      <section>
-        <h2>Main Content</h2>
-        <p>This is the main content section. On small screens, everything is stacked. On larger screens, this layout can expand with more columns.</p>
+      <section id="destinationSection">
+        <h2>Destination Juni 2025</h2>
+        <video src="./assets/images/Uploads/Island.mp4" autoplay loop muted></video>
+        <article>
+          <h3>Réunion Island</h3>
+          <p>Øst for Madagaskar, og Vest for Mauritius ligger det tropiske paradis Réunion Island. Øen er et Fransk Departement.</p>
+          <p>
+            Réunion er et multikulturelt samfund sammensat af mennesker oprindeligt fra Frankrig, Mozambique, Indien, Kina, Madagaskar og Comorerne. Hovedsprogene er Creolsk og Fransk. Og møntfoden er
+            Euro.
+          </p>
+          <p>
+            Den ophavsmæssige mangfoldigheden sætter især sit tydelige præg på det lokale "Creolske" køkken. Øens "Cirques", Piton del la Furnaise, imponerende vandfald og de fascinerende
+            lava-tunneller er unikke for Réunion
+          </p>
+          <p>
+            Kolonitiden har efterladt farverige, velbevarede bygninger, og den livlige kulturelle blanding smitter af på både sproget og i køkkenet. Juni til august er den tørreste periode, hvor der
+            også er mindre varmt.
+          </p>
+          <a href="#">Læs mere:</a>
+        </article>
       </section>
-      <section>
-        <h2>Main Content</h2>
-        <p>This is the main content section. On small screens, everything is stacked. On larger screens, this layout can expand with more columns.</p>
+      <section id="indtrykSection">
+        <figure>
+          <img src="./assets/images/Uploads/Reunion-Island-01.jpg" alt="location1" />
+          <img src="./assets/images/Uploads/Reunion-Island-02.jpg" alt="location2" />
+          <img src="./assets/images/Uploads/Reunion-Island-03.jpg" alt="location3" />
+          <img src="./assets/images/Uploads/Reunion-Island-04.jpg" alt="location4" />
+          <img src="./assets/images/Uploads/Reunion-Island-05.jpg" alt="location5" />
+          <img src="./assets/images/Uploads/Reunion-Island-06.jpg" alt="location6" />
+          <img src="./assets/images/Uploads/Reunion-Island-07.jpg" alt="location7" />
+          <img src="./assets/images/Uploads/Reunion-Island-08.jpg" alt="location8" />
+        </figure>
       </section>
-      <section>
-        <h2>Main Content</h2>
-        <p>This is the main content section. On small screens, everything is stacked. On larger screens, this layout can expand with more columns.</p>
+      <section id="aboutBrainAir">
+        <h3></h3>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="img1.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img2.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="img3.jpg" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
       </section>
     </main>
     <!-- #endregion -->

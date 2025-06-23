@@ -29,30 +29,23 @@ header {
   grid-area: header;
   background-color: var(--header-bg);
   color: var(--text-light);
-  padding: 2rem 1rem;
-  text-align: center;
 }
 
 nav {
   grid-area: nav;
   background-color: var(--nav-bg);
-  padding: 1rem;
-  text-align: center;
 }
 
 main {
   grid-area: main;
   background-color: var(--main-bg);
   color: var(--text-light);
-  padding: 2rem 1rem;
 }
 
 footer {
   grid-area: footer;
   background-color: var(--footer-bg);
   color: var(--text-light);
-  padding: 1rem;
-  text-align: center;
 }
 
 h1,
