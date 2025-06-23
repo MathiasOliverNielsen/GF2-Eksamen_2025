@@ -27,24 +27,20 @@ body {
 /* #region Header, Nav, Main, Footer */
 header {
   grid-area: header;
-  background-color: var(--header-bg);
   color: var(--text-light);
 }
 
 nav {
   grid-area: nav;
-  background-color: var(--nav-bg);
 }
 
 main {
   grid-area: main;
-  background-color: var(--main-bg);
   color: var(--text-light);
 }
 
 footer {
   grid-area: footer;
-  background-color: var(--footer-bg);
   color: var(--text-light);
 }
 

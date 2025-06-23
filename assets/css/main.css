@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(Full-Page_Grid-Areas.css);
+@import url(form.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
@@ -29,8 +30,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+/* #endregion */
 /* todo */
-/* Region about section Slider */
+/* #region main content */
+/* #region about section Slider */
 /* Slideshow container */
 .slideshow-container {
   position: relative;
@@ -85,3 +89,5 @@ img {
     opacity: 1;
   }
 }
+/* #endregion */
+/* #endregion */

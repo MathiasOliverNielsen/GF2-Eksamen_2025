@@ -1,0 +1,109 @@
+#MainNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background-color: var(--blue-light);
+}
+#MainNav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#MainNav ul li {
+  margin-left: 0.4rem;
+}
+#MainNav ul li a {
+  text-decoration: none;
+  color: var(--light);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#MainNav ul li a:hover {
+  color: var(--blue-dark);
+}
+
+#MainNav ul li:last-of-type a {
+  color: var(--blue);
+}
+dialog {
+  background-color: var(--light);
+  width: 50%;
+}
+.error-placeholder {
+  min-height: 1.2em;
+  display: block;
+  font-size: 0.85rem;
+}
+
+#signupform {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 18px rgba(50, 114, 155, 0.08), 0 1.5px 6px rgba(51, 51, 51, 0.07);
+  min-width: 320px;
+  max-width: 400px;
+  margin: 2rem auto;
+  min-height: 420px;
+}
+
+#signupform label {
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: var(--headings);
+  letter-spacing: 0.02em;
+}
+
+#signupform input,
+#signupform select {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid var(--gray-light);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border-color 0.2s;
+}
+
+#signupform input:focus,
+#signupform select:focus {
+  border-color: var(--primary);
+  outline: none;
+  background: #fff;
+}
+
+#signupform input[type="submit"] {
+  background: linear-gradient(90deg, var(--logo-blue), var(--logo-yellow));
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.07);
+}
+
+#signupform input[type="submit"]:hover {
+  background: linear-gradient(90deg, var(--logo-yellow), var(--logo-blue));
+  transform: translateY(-2px) scale(1.03);
+}
+
+#signupform .error {
+  color: var(--danger);
+  font-size: 0.9rem;
+  margin-top: -0.7rem;
+  margin-bottom: 0.3rem;
+}
+
+#signupform input[type="submit"] {
+  height: 20%;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+}
