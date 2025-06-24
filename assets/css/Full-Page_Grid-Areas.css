@@ -21,13 +21,11 @@ body {
   min-height: 100vh;
   font-family: sans-serif;
   line-height: 1.6;
-  margin: var(--full-site-margin);
-  background-color: var(--total-site-bg);
+  /* margin: var(--full-site-margin); */
 }
 /* #region Header, Nav, Main, Footer */
 header {
   grid-area: header;
-  color: var(--text-light);
 }
 
 nav {
@@ -36,21 +34,15 @@ nav {
 
 main {
   grid-area: main;
-  color: var(--text-light);
 }
 
 footer {
   grid-area: footer;
-  color: var(--text-light);
 }
 
 h1,
 h2 {
   margin-bottom: 0.5rem;
-}
-
-section {
-  margin-bottom: 2rem;
 }
 
 /* Responsive layout for larger screens */

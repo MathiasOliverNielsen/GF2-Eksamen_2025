@@ -1,109 +1,90 @@
-#MainNav {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: start;
-  background-color: var(--blue-light);
-}
-#MainNav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-#MainNav ul li {
-  margin-left: 0.4rem;
-}
-#MainNav ul li a {
-  text-decoration: none;
-  color: var(--light);
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-#MainNav ul li a:hover {
-  color: var(--blue-dark);
+:root {
+  --white: #fcfbfc;
+  --light: #ededed;
+  --dark: #333;
+  --black: #212121;
+  --blue-dark: #32538b;
+  --blue-light: #4f74b4;
+  --yellow: #e4b834;
+  --yellow-light: #ffd51b;
+  --primary: #4496ee;
+  --secondary: #ddd;
+  --danger: #d44;
+  --success: #3b833b;
 }
 
-#MainNav ul li:last-of-type a {
-  color: var(--blue);
-}
+/* Dialog background */
 dialog {
   background-color: var(--light);
   width: 50%;
-}
-.error-placeholder {
-  min-height: 1.2em;
-  display: block;
-  font-size: 0.85rem;
+  border-radius: 0.7rem;
+  border: none;
+  box-shadow: 0 4px 24px #005fa314;
 }
 
+/* Form container */
 #signupform {
+  background: #fff;
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px #005fa30f;
   padding: 2rem 1.5rem;
+  min-width: 260px;
+  max-width: 340px;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
-  background: #fff;
-  border-radius: 1rem;
-  box-shadow: 0 4px 18px rgba(50, 114, 155, 0.08), 0 1.5px 6px rgba(51, 51, 51, 0.07);
-  min-width: 320px;
-  max-width: 400px;
-  margin: 2rem auto;
-  min-height: 420px;
+  gap: 1rem;
 }
 
+/* Labels */
 #signupform label {
-  margin-bottom: 0.3rem;
-  font-weight: 600;
-  color: var(--headings);
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.01em;
 }
 
+/* Inputs and selects */
 #signupform input,
 #signupform select {
   padding: 0.7rem 1rem;
-  border: 1.5px solid var(--gray-light);
-  border-radius: 0.5rem;
+  border: 1.5px solid var(--primary);
+  border-radius: 0.4rem;
   font-size: 1rem;
-  background: #f8fafc;
-  transition: border-color 0.2s;
+  background: var(--light);
+  transition: border-color 0.2s, background 0.2s;
 }
 
 #signupform input:focus,
 #signupform select:focus {
   border-color: var(--primary);
-  outline: none;
   background: #fff;
+  outline: none;
 }
 
+/* Submit button */
 #signupform input[type="submit"] {
-  background: linear-gradient(90deg, var(--logo-blue), var(--logo-yellow));
+  background: linear-gradient(90deg, var(--primary), var(--blue-dark));
   color: #fff;
-  font-weight: 700;
+  font-weight: 600;
   border: none;
-  border-radius: 0.5rem;
-  padding: 0.9rem 0;
-  font-size: 1.1rem;
+  border-radius: 0.4rem;
+  padding: 0.8rem 0;
+  font-size: 1.05rem;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-  box-shadow: 0 2px 8px rgba(51, 51, 51, 0.07);
+  transition: background 0.2s;
+  box-shadow: none;
 }
 
 #signupform input[type="submit"]:hover {
-  background: linear-gradient(90deg, var(--logo-yellow), var(--logo-blue));
-  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, var(--blue-dark), var(--primary));
 }
 
-#signupform .error {
+/* Error messages */
+#signupform .error,
+.error-placeholder {
   color: var(--danger);
-  font-size: 0.9rem;
-  margin-top: -0.7rem;
-  margin-bottom: 0.3rem;
-}
-
-#signupform input[type="submit"] {
-  height: 20%;
-}
-
-.error {
-  color: red;
   font-size: 0.85rem;
+  min-height: 1em;
+  margin-bottom: 0.2rem;
 }

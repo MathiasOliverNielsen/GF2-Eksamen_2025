@@ -1,6 +1,8 @@
 @import url(reset.css);
 @import url(Full-Page_Grid-Areas.css);
 @import url(form.css);
+@import url(header.css);
+@import url(nav.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
@@ -17,8 +19,9 @@
   --danger: #d44;
   --success: #3b833b;
 }
-
+/*  #region Global Selectors */
 body {
+  max-width: 760px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: var(--light);
@@ -31,9 +34,123 @@ img {
   height: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue-dark);
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 2rem;
+}
 /* #endregion */
-/* todo */
+/* #endregion */
 /* #region main content */
+/* #region destinationSection*/
+
+#destinationSection {
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.destination-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.destination-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.destination-wrapper article {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-width: 100%;
+  box-shadow: 0 2px 10px #0000000d;
+}
+
+.destination-wrapper span {
+  font-weight: bold;
+}
+
+.destination-wrapper a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.destination-wrapper p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: var(--black);
+  letter-spacing: 0.02em;
+  padding: 0.3em 0;
+  max-width: 65ch;
+}
+
+@media (min-width: 768px) {
+  .destination-wrapper {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding: 0 5%;
+  }
+}
+
+/* Tablet og op: Grid med to kolonner */
+@media (min-width: 768px) {
+  #destinationSection {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    padding: 0 5%;
+  }
+}
+
+/* #endregion */
+/* #region Indtryk Section */
+#indtrykSection {
+  padding: 1rem 0;
+}
+
+#indtrykSection h3 {
+  margin-bottom: 1rem;
+}
+
+#indtrykSection figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  #indtrykSection figure {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  #indtrykSection figure {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+#indtrykSection img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* #endregion */
 /* #region about section Slider */
 /* Slideshow container */
 .slideshow-container {
@@ -89,5 +206,170 @@ img {
     opacity: 1;
   }
 }
+/* cards */
+.card-container figure {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-container figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-container figcaption {
+  padding-top: 1rem;
+}
+
+.card-container figcaption h5 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.card-container figcaption p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+}
+
+.card-container figcaption a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+/* Tablet: billede og tekst side om side */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .card-container figure {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .card-container figure img {
+    width: 50%;
+  }
+
+  .card-container figcaption {
+    width: 50%;
+    padding-top: 0;
+  }
+}
+
+/* Desktop: 3 kolonner med tekst under hvert billede */
+@media (min-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 0 5%;
+  }
+
+  .card-container figure {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .card-container figure img,
+  .card-container figcaption {
+    width: 100%;
+  }
+}
+
 /* #endregion */
+/* #endregion */
+/* #region Global Footer */
+#MainFooter {
+  background-color: var(--blue-light); /* Blå baggrund */
+  color: #fff; /* Lys/hvid tekst */
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 5%;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-family: "Manrope", sans-serif;
+}
+
+#MainFooter .footer-column {
+  flex: 1 1 200px; /* Minimum bredde */
+  max-width: 300px;
+}
+
+#MainFooter h5 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 0.4rem;
+}
+
+#MainFooter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#MainFooter ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+#MainFooter .social {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+#MainFooter figcaption {
+  font-weight: 700;
+  color: var(--yellow);
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+#MainFooter a {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* Mindre ikoner */
+#MainFooter img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+/* #endregion */
+/* #region Media Q */
+/* Tablet styles */
+@media (min-width: 760px) {
+  body {
+    max-width: 1000px;
+  }
+
+  #indtrykSection img {
+    width: 100%;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  body {
+    max-width: 1920px;
+  }
+
+  #indtrkSection {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 /* #endregion */

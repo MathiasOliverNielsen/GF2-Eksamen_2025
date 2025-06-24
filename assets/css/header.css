@@ -1,0 +1,27 @@
+#MainHeader h1 {
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: #ffffff8d;
+  z-index: 3;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+#MainHeader h1 span:last-of-type {
+  color: var(--yellow);
+}
+@media (max-width: 1024px) and (min-width: 601px) {
+  #MainHeader h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1025px) {
+  #MainHeader h1 {
+    font-size: 4rem;
+    padding: 0.75em 1.5em;
+    top: 3rem;
+    left: 3rem;
+  }
+}

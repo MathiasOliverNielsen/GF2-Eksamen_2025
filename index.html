@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BrianAir</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
     <!-- #region GLOBAL HEADER -->
     <header id="MainHeader">
       <h1>
-        <span>Brian</span>
-        <span>Air</span>
+        <span>BRIAN</span>
+        <span>AIR</span>
       </h1>
       <img src="./assets/images/Hero-Image-Brianair-Interiur.jpg" alt="" />
     </header>
@@ -41,7 +41,6 @@
           <a id="signUp" onclick="openDialog()">SignUp</a>
         </li>
       </ul>
-
       <dialog id="myDialog">
         <form id="signupform" onsubmit="submitForm(event)" novalidate>
           <label for="firstname" aria-label="First name">Fornavn:</label>
@@ -66,28 +65,41 @@
     <!-- #endregion -->
     <!-- #region GLOBAL MAIN CONTENT -->
     <main>
+      <h3>Destination Juni 2025</h3>
       <section id="destinationSection">
-        <h2>Destination Juni 2025</h2>
-        <video src="./assets/images/Uploads/Island.mp4" autoplay loop muted></video>
-        <article>
-          <h3>Réunion Island</h3>
-          <p>Øst for Madagaskar, og Vest for Mauritius ligger det tropiske paradis Réunion Island. Øen er et Fransk Departement.</p>
-          <p>
-            Réunion er et multikulturelt samfund sammensat af mennesker oprindeligt fra Frankrig, Mozambique, Indien, Kina, Madagaskar og Comorerne. Hovedsprogene er Creolsk og Fransk. Og møntfoden er
-            Euro.
-          </p>
-          <p>
-            Den ophavsmæssige mangfoldigheden sætter især sit tydelige præg på det lokale "Creolske" køkken. Øens "Cirques", Piton del la Furnaise, imponerende vandfald og de fascinerende
-            lava-tunneller er unikke for Réunion
-          </p>
-          <p>
-            Kolonitiden har efterladt farverige, velbevarede bygninger, og den livlige kulturelle blanding smitter af på både sproget og i køkkenet. Juni til august er den tørreste periode, hvor der
-            også er mindre varmt.
-          </p>
-          <a href="#">Læs mere:</a>
-        </article>
+        <div class="destination-wrapper">
+          <video src="./assets/images/Uploads/Island.mp4" autoplay loop muted></video>
+          <article>
+            <h3>Réunion Island</h3>
+            <p>
+              <span>Øst for Madagaskar</span>
+              , og
+              <span>Vest for Mauritius</span>
+              ligger det tropiske paradis
+              <span>Réunion Island</span>
+              . Øen er et
+              <span>Fransk Departement.</span>
+            </p>
+            <p>
+              Réunion er et multikulturelt samfund sammensat af mennesker oprindeligt fra Frankrig, Mozambique, Indien, Kina, Madagaskar og Comorerne. Hovedsprogene er
+              <span>Creolsk og Fransk</span>
+              . Og møntfoden er Euro.
+            </p>
+            <p>
+              Den ophavsmæssige mangfoldighed sætter især sit tydelige præg på det lokale "Creolske" køkken. Øens "Cirques", Piton de la Fournaise, imponerende vandfald og de fascinerende
+              lava-tunneller er unikke for Réunion.
+            </p>
+            <p>
+              Kolonitiden har efterladt farverige, velbevarede bygninger, og den livlige kulturelle blanding smitter af på både sproget og i køkkenet. Juni til august er den tørreste periode, hvor der
+              også er mindre varmt.
+            </p>
+            <a href="#">Læs mere:</a>
+          </article>
+        </div>
       </section>
+
       <section id="indtrykSection">
+        <h3>Indtryk fra Réunion</h3>
         <figure>
           <img src="./assets/images/Uploads/Reunion-Island-01.jpg" alt="location1" />
           <img src="./assets/images/Uploads/Reunion-Island-02.jpg" alt="location2" />
@@ -100,82 +112,91 @@
         </figure>
       </section>
       <section id="aboutBrainAir">
-        <h3></h3>
+        <h3>Om BrianAir</h3>
+
         <!-- Slideshow container -->
         <div class="slideshow-container">
-          <!-- Full-width images with number and caption text -->
           <div class="mySlides fade">
             <img src="./assets/images/Slider-Plane-In-Sunrise.jpg" />
           </div>
-
           <div class="mySlides fade">
             <img src="./assets/images/Plane-In-Sunset.jpg" />
           </div>
-
           <div class="mySlides fade">
             <img src="./assets/images/Slider-Plane-on-Runway.jpg" />
           </div>
 
-          <!-- Next and previous buttons -->
           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <figure>
-          <img src="./assets/images/Check-in.jpg" alt="" />
-          <figcaption>
-            <h5>TjekIn</h5>
-            <p>
-              Hvis du har reserveret en plads på forhånd, kan du tjekke ind online op til 60 dage før planlagt afrejse. Dine udgående og indgående flyafgange skal dog være inden for de 60 dage fra
-              afrejse.
-            </p>
-            <p>Hvis du ikke har reserveret en plads, og du tildeles en tilfældigt, åbner tjek-ind 24 timer før afrejse og lukker 2 timer før.</p>
-            <a href="#">Mere:</a>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/Planes.jpg" alt="" />
-          <figcaption>
-            <h5>Flyene</h5>
-            <p>BrianAir fokuserer på en flåde bestående hovedsageligt af én flytype: selskabet har per 2021 over 450 narrow body-fly af typen Boeing 737.</p>
-            <p>De nye CFM56 turbofan-motorer, som med forbedret ydeevne, mindre brændstofforbrug og langt mindre støjforurening.</p>
-            <a href="#">Mere:</a>
-          </figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/images/Crew.jpg" alt="Mere:" />
-          <figcaption>
-            <h5>Crew</h5>
-            <p>Kabinepersonel er ansvarlige for passagerernes sikkerhed og komfort ombord på flyet, og derfor anvender BrianAir kun uddannet personale i besætningen.</p>
-            <p>Alle besætningsmedlemmer er certificerede og udannede indenfor gældende standarder. Vi ser frem til at give dig en god oplevelse.</p>
-            <a href="#">Mere:</a>
-          </figcaption>
-        </figure>
+
+        <!-- Her pakker vi dine cards ind i en wrapper -->
+        <div class="card-container">
+          <figure>
+            <img src="./assets/images/Check-in.jpg" alt="" />
+            <figcaption>
+              <h5>TjekIn</h5>
+              <p>
+                Hvis du har reserveret en plads på forhånd, kan du tjekke ind online op til 60 dage før planlagt afrejse. Dine udgående og indgående flyafgange skal dog være inden for de 60 dage fra
+                afrejse.
+              </p>
+              <p>Hvis du ikke har reserveret en plads, og du tildeles en tilfældigt, åbner tjek-ind 24 timer før afrejse og lukker 2 timer før.</p>
+              <a href="#">Mere:</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/Planes.jpg" alt="" />
+            <figcaption>
+              <h5>Flyene</h5>
+              <p>BrianAir fokuserer på en flåde bestående hovedsageligt af én flytype: selskabet har per 2021 over 450 narrow body-fly af typen Boeing 737.</p>
+              <p>De nye CFM56 turbofan-motorer, som med forbedret ydeevne, mindre brændstofforbrug og langt mindre støjforurening.</p>
+              <a href="#">Mere:</a>
+            </figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/images/Crew.jpg" alt="Mere:" />
+            <figcaption>
+              <h5>Crew</h5>
+              <p>Kabinepersonel er ansvarlige for passagerernes sikkerhed og komfort ombord på flyet, og derfor anvender BrianAir kun uddannet personale i besætningen.</p>
+              <p>Alle besætningsmedlemmer er certificerede og udannede indenfor gældende standarder. Vi ser frem til at give dig en god oplevelse.</p>
+              <a href="#">Mere:</a>
+            </figcaption>
+          </figure>
+        </div>
       </section>
     </main>
     <!-- #endregion -->
     <!-- #region GLOBAL FOOTER -->
     <footer id="MainFooter">
-      <ul>
+      <div class="footer-column">
         <h5>BrianAir</h5>
-        <li>Esplanaden 50</li>
-        <li>1098 Copenhagen K</li>
-        <li>+45 2244 5066</li>
-        <li>Email: info@brianair.dk</li>
-      </ul>
-      <ul>
+        <ul>
+          <li>Esplanaden 50</li>
+          <li>1098 Copenhagen K</li>
+          <li>+45 2244 5066</li>
+          <li>Email: info@brianair.dk</li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
         <h5>Information:</h5>
-        <li>Spanske Bank, 9245 6543 7698</li>
-        <li>Betalingsbetingelser: 30 dage.</li>
-        <li>CVR Nr. 34632430</li>
-        <li>money@brianair.dk</li>
-      </ul>
-      <figure>
-        <figcaption>Externe Links:</figcaption>
-        <a href="#"><img src="./assets/images/SoMe-Fb.svg" alt="SoMe" /></a>
-        <a href="#"><img src="./assets/images/SoMe-Insta.svg" alt="SoMe" /></a>
-        <a href="#"><img src="./assets/images/SoMe-YouTube.svg" alt="SoMe" /></a>
-      </figure>
+        <ul>
+          <li>Spanske Bank, 9245 6543 7698</li>
+          <li>Betalingsbetingelser: 30 dage.</li>
+          <li>CVR Nr. 34632430</li>
+          <li>money@brianair.dk</li>
+        </ul>
+      </div>
+      <figcaption>
+        Externe Links:
+        <div class="footer-column social">
+          <a href="#"><img src="./assets/images/SoMe-Fb.svg" alt="Facebook" /></a>
+          <a href="#"><img src="./assets/images/SoMe-Insta.svg" alt="Instagram" /></a>
+          <a href="#"><img src="./assets/images/SoMe-YouTube.svg" alt="YouTube" /></a>
+        </div>
+      </figcaption>
     </footer>
+
     <!-- #endregion -->
   </body>
 </html>
